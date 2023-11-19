@@ -2,40 +2,47 @@
 <html lang="en">
     <head>
         <title>Daftar Fakultas</title>
+        <link rel="stylesheet" href="list_data_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <h3><center>Quiz Pemrograman Berbasis Web</center></h3>
-        <table bgcolor="azure" border="4"" align="center">
-            <tr align="center">
-                <td><a href="index.html">Data Diri</a></td>
-                <td><a href="list_data.html">Daftar Fakultas</a></td>
-                <td><a href="input_data.html">Formulir</a></td>
-                <td><a href="table_data.html">Tabel Data</a></td>
-                <td><a href="about.html">About</a></td>
-            </tr>
-        </table>
+        <nav class="navbar">
+            <div class="left">
+                <h1>Quiz Pemrograman Web</h1>
+            </div>
+            <div class="right">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkBtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="list">
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="list_data.html">Fakultas & Jurusan</a></li>
+                    <li><a href="table_data.html">Tabel Data</a></li>
+                    <li><a href="input_data.html">Form Data diri</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
         <hr>
-        <h3><center>Universitas Insan Pembangunan Indonesia</center></h3>
-        <ol>
-            <li>Fakultas Ilmu Komputer
-                <ul>
-                    <li>S1 Teknologi Informasi</li>
-                    <li>S1 Sistem Informasi</li>
-                    <li>S1 Software Engineering</li>
-                </ul>
-            </li>
-            <li>Fakultas Ekonomi dan Bisnis
-                <ul>
-                    <li>S1 Akuntansi</li>
-                    <li>S1 Manajemen</li>
-                </ul>
-            </li>
-            <li>Pascasarjana
-                <ul>
-                    <li>S2 Manajemen</li>
-                </ul>
-            </li>
-        </ol>
+        <marquee><h3>Universitas Insan Pembangunan Indonesia</h3></marquee>
+        <div class="one">
+            <div class="column1">
+                <p>1. Fakultas Ilmu Komputer</p>
+                <li>S1 Sistem Informasi</li>
+                <li>S1 Teknologi Informasi</li>
+                <li>S1 Software Engineering</li>
+            </div>
+            <div class="column2">
+                <p>2. Fakulas Ekonomi & Bisnis</p>
+                <li>S1 Akuntansi</li>
+                <li>S1 Manajemen</li>
+            </div>
+            <div class="column3">
+                <p>3. Pascasarjana</p>
+                <li>S2 Manajemen</li>
+            </div>
+        </div>
         <br>
         <hr>
         <div><footer>&copy;2023 by Haerul Anwar</footer></div>
