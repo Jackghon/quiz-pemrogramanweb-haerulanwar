@@ -2,90 +2,102 @@
 <html lang="en">
     <head>
         <title>Formulir</title>
+        <link rel="stylesheet" href="input_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <h3><center>Quiz Pemrograman Berbasis Web</center></h3>
-        <table bgcolor="azure" border="4"" align="center">
-            <tr align="center">
-                <td><a href="index.html">Data Diri</a></td>
-                <td><a href="list_data.html">Daftar Fakultas</a></td>
-                <td><a href="input_data.html">Formulir</a></td>
-                <td><a href="table_data.html">Tabel Data</a></td>
-                <td><a href="about.html">About</a></td>
-            </tr>
-        </table>
+        <nav class="navbar">
+            <div class="left">
+                <h1>Quiz Pemrograman Web</h1>
+            </div>
+            <div class="right">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkBtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="list">
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="list_data.html">Fakultas & Jurusan</a></li>
+                    <li><a href="table_data.html">Tabel Data</a></li>
+                    <li><a href="input_data.html">Form Data diri</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
         <hr>
         <form action="prosessForm.php" method="get">
             <fieldset>
                 <legend><h1>Formulir Data Diri Costumer</h1></legend>
-                <table>
-                    <tr>
-                        <td><label>Nama</label></td>
-                        <td>:</td>
-                        <td><input type="name" name="nama" placeholder="Masukan Nama"/><br /></td>
-                    </tr>       
-                    <tr>
-                        <td>Tempat & Tanggal Lahir</td>
-                        <td>:</td>
-                        <td><input type="name" name="tempatLahir" placeholder="Tempat lahir"/> <input type="date" name="tanggal" /></td>
-                    </tr>
-                    <tr>
-                        <td>Umur</td>
-                        <td>:</td>
-                        <td><input type="number" min="20" name="umur"></td>
-                    </tr>
-                    <tr>
-                        <td>Agama</td>
-                        <td>:</td>
-                        <td><select name="agama">
-                            <option value="islam"> Islam</option>
-                            <option value="kristen"> Kristen</option>
-                            <option value="katolik"> Katolik</option>
-                            <option value="budha"> Budha</option>
-                            <option value="hindu"> Hindu</option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <td>Alamat</td>
-                        <td>:</td>
-                        <td><textarea name="komentar" rows="4" cols="50" placeholder="Alamat Lengkap"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td>No Telp/Hp</td>
-                        <td>:</td>
-                        <td><input type="number" name="number" /></td>
-                    </tr>
-                    <tr>
-                        <td>Jenis Kelamin</td>
-                        <td>:</td>
-                        <td><input type="radio" name="jenisKelamin" value="pria" /> Pria
-                            <input type="radio" name="jenisKelamin" value="wanita" /> Wanita</td>
-                    </tr>
-                    <tr>
-                        <td>Hobi</td>
-                        <td>:</td>
-                        <td><input type="checkbox" name="hobi" /> Membaca
-                            <input type="checkbox" name="hobi" /> Menulis 
-                            <input type="checkbox" name="hobi" /> Olahraga
-                            <input type="checkbox" name="hobi" /> Lain-lain
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Pas Foto</td>
-                        <td>:</td>
-                        <td><input type="file" name="foto" /></td>
-                    </tr>
-                    <tr>
-                        <td><br></td>
-                        <td><br></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" name="submit" value="Daftar"/></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+                <div class="card">
+                    <table>
+                        <tr>
+                            <td><label>Nama</label></td>
+                            <td>:</td>
+                            <td><input type="name" name="nama" placeholder="Masukan Nama"/><br /></td>
+                        </tr>       
+                        <tr>
+                            <td><label>Tempat & Tanggal Lahir</label></td>
+                            <td>:</td>
+                            <td><input type="name" name="tempatLahir" placeholder="Tempat lahir"/> <input type="date" name="tanggal" /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Umur</label></td>
+                            <td>:</td>
+                            <td><input type="number" min="20" name="umur"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Agama</label></td>
+                            <td>:</td>
+                            <td><select name="agama">
+                                <option value="islam"> Islam</option>
+                                <option value="kristen"> Kristen</option>
+                                <option value="katolik"> Katolik</option>
+                                <option value="budha"> Budha</option>
+                                <option value="hindu"> Hindu</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td><label>Alamat</label></td>
+                            <td>:</td>
+                            <td><textarea name="komentar" rows="4" cols="50" placeholder="Alamat Lengkap"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>No Telp/Hp</label></td>
+                            <td>:</td>
+                            <td><input type="number" name="number" /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Jenis Kelamin</label></td>
+                            <td>:</td>
+                            <td><input type="radio" name="jenisKelamin" value="pria" /> Pria
+                                <input type="radio" name="jenisKelamin" value="wanita" /> Wanita</td>
+                        </tr>
+                        <tr>
+                            <td><label>Hobi</label></td>
+                            <td>:</td>
+                            <td><input type="checkbox" name="hobi" /> Membaca
+                                <input type="checkbox" name="hobi" /> Menulis
+                                <input type="checkbox" name="hobi" /> Olahraga
+                                <input type="checkbox" name="hobi" /> Lain-lain
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Pas Foto</label></td>
+                            <td>:</td>
+                            <td><input type="file" name="foto" /></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                            <td><br></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="submit" value="Daftar"/></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
             </fieldset>
         </form>
         <br>
