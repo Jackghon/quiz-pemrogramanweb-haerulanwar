@@ -2,108 +2,139 @@
 <html lang="en">
     <head>
         <title>About</title>
+        <link rel="stylesheet" href="about_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <h3><center>Quiz Pemrograman Berbasis Web</center></h3>
-        <table bgcolor="azure" border="4"" align="center">
-            <tr align="center">
-                <td><a href="index.html">Data Diri</a></td>
-                <td><a href="list_data.html">Daftar Fakultas</a></td>
-                <td><a href="input_data.html">Formulir</a></td>
-                <td><a href="table_data.html">Tabel Data</a></td>
-                <td><a href="about.html">About</a></td>
-            </tr>
+        <nav class="navbar">
+            <div class="left">
+                <h1>Quiz Pemrograman Web</h1>
+            </div>
+            <div class="right">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkBtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="list">
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="list_data.html">Fakultas & Jurusan</a></li>
+                    <li><a href="table_data.html">Tabel Data</a></li>
+                    <li><a href="input_data.html">Form Data diri</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
         </table>
         <hr>
-        <h1 align="center">DAFTAR RIWAYAT HIDUP</h1>
-        <table align="center" border="1">
-            <tr>
-                <td><img src="fotoprofil1.jpeg" width="330px" height="330px" border="2"></td>
-            </tr>
-            <tr align="center">
-                <td> No. Hp : 0895331605486 </td>
-            </tr>
-            <tr align="center">
-                <td> haerulanwr51@gmail.com </td>
-            </tr>
-        </table>
-        <p style="background-color: aqua; font-size: 25px;"><b>Profile</b></p>
-        <table align="center">
-            <tr>
-                <td width="2%">Nama</td>
-                <td width="10%">: Haerul Anwar</td>
-            </tr>
-            <tr>
-                <td width="2%">Tempat Lahir</td>
-                <td width="10%">: Tangerang</td>
-            </tr>
-            <tr>
-                <td width="2%">Umur</td>
-                <td width="10%">: 22 Tahun</td>
-            </tr>
-            <tr>
-                <td width="2%">Alamat</td>
-                <td width="10%">: Periuk Jaya, Periuk, Tangerang</td>
-            </tr>
-        </table>
-        <p style="background-color: aqua; font-size: 25px;"><b>Pendidikan</b></p>
-        <table align="center">
-            <tr>
-                <td width="2%">SD</td>
-                <td width="10%">: SD Negeri Periuk Jaya Permai</td>
-            </tr>
-            <tr>
-                <td width="2%">SMP</td>
-                <td width="10%">: SMP Negeri 15 Tangerang</td>
-            </tr>
-            <tr>
-                <td width="2%">SMA</td>
-                <td width="10%">: SMA PGRI 109 Tangerang</td>
-            </tr>
-            <tr>
-                <td width="2%">Universitas</td>
-                <td width="10%">: Universitas Insan Pembangunan</td>
-            </tr>
-        </table>
-        <p style="background-color: aqua; font-size: 25px;"><b>Keahlian</b></p>
-        <table align="center">
-            <tr>
-                <td width="2%">Bahasa Inggris</td>
-                <td width="10%">: Medium</td>
-            </tr>
-            <tr>
-                <td width="2%">Public Speaking</td>
-                <td width="10%">: Medium</td>
-            </tr>
-            <tr>
-                <td width="2%">Komputer</td>
-                <td width="10%">: Medium</td>
-            </tr>
-        </table>
-        <p style="background-color: aqua; font-size: 25px;"><b>Pengalaman Kerja</b></p>
-        <table align="center">
-            <tr>
-                <td width="2%">PT. Indo Taichen Tekstil Indonesia</td>
-                <td width="10%">: Sebagai Operator Produksi</td>
-            </tr>
-            <tr>
-                <td width="2%">PT. Sinwa Perdana Mandiri</td>
-                <td width="10%">: Sebagai Operator Produksi</td>
-            </tr>
-            <tr>
-                <td width="2%">PT. National Label</td>
-                <td width="10%">: Sebagai Admin Warehouse Material</td>
-            </tr>
-        </table>
-        <p style="background-color: aqua; font-size: 25px;"><b>Kontak</b></p>
-        <table align="center">
-            <tr>
-                <td width="2%">Instagram</td>
-                <td width="10%">: @haeeruul</td>
-            </tr>
-        </table>
+        <div class="container">
+            <p>DAFTAR RIWAYAT HIDUP</p>
+            <table>
+                <tr>
+                    <td><img src="fotoprofil1.jpeg" width="330px" height="330px" border="2"></td>
+                </tr>
+                <tr>
+                    <td> No. Hp : 0895331605486 </td>
+                </tr>
+                <tr>
+                    <td> haerulanwr51@gmail.com </td>
+                </tr>
+            </table>
+            <div class="profile">
+                <h1>PROFILE</h1>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>: Haerul Anwar</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Lahir</td>
+                        <td>: Tangerang</td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td>: 22 Tahun</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>: Periuk Jaya, Periuk, Tangerang</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pendidikan">
+                <h1>PENDIDIKAN</h1>
+                <table>
+                    <tr>
+                        <td>SD</td>
+                        <td>: SD Negeri Periuk Jaya Permai</td>
+                    </tr>
+                    <tr>
+                        <td>SMP</td>
+                        <td >: SMP Negeri 15 Tangerang</td>
+                    </tr>
+                    <tr>
+                        <td>SMA</td>
+                        <td>: SMA PGRI 109 Tangerang</td>
+                    </tr>
+                    <tr>
+                        <td >Universitas</td>
+                        <td>: Universitas Insan Pembangunan</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="skill">
+                <h1>KEAHLIAN</h1>
+                <table>
+                    <tr>
+                        <td>Bahasa Inggris</td>
+                        <td>: Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Public Speaking</td>
+                        <td>: Medium</td>
+                    </tr>
+                    <tr>
+                        <td>Komputer</td>
+                        <td>: Medium</td>
+                    </tr>
+                </table>        
+            </div>
+            <div class="one">
+                <h1>PENGALAMAN KERJA</h1>
+                <table>
+                    <tr>
+                        <td>PT. Indo Taichen Tekstil Indonesia</td>
+                        <td>: Sebagai Operator Produksi</td>
+                    </tr>
+                    <tr>
+                        <td>PT. Sinwa Perdana Mandiri</td>
+                        <td>: Sebagai Operator Produksi</td>
+                    </tr>
+                    <tr>
+                        <td>PT. National Label</td>
+                        <td>: Sebagai Admin Warehouse Material</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="two">
+                <h1>KONTAK</h1>
+                <table>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>: @haeeruul</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>: JhonGhon</td>
+                    </tr>
+                    <tr>
+                        <td>Youtube</td>
+                        <td>: JhonGhonYT</td>
+                    </tr>
+                </table>     
+            </div>
+        </div>
         <hr>
-        <div style="text-align: center; background-color: aqua;">
+        <div class="typing">
             <footer>&copy;2023 By Haerul Anwar</footer>
         </div>
     </body> 
